@@ -4,10 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Vue.js TechTalkSE</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/league.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -26,26 +26,96 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>
-					<h1>Tytułowy</h1>
+				<section data-background-image="img/title-slide.png" data-background-size="contain">
 				</section>
 				<section>
-					<img src="ivory-tower.jpg" alt="ivory tower" height="500">
+					<figure>
+						<img src="img/ivory-tower.jpg" alt="ivory tower" height="550">
+                    </figure>
 				</section>
 				<section>
 					<h3>Brutal lifecycle of JavaScript frameworks</h3>
 					<figure class="cap">
-						<img src="brutal-lifecycle.png" alt="" height="450">
+						<img src="img/brutal-lifecycle.png" alt="" height="450">
 						<figcaption>https://stackoverflow.blog/2018/01/11/brutal-lifecycle-javascript-frameworks
 						</figcaption>
 					</figure>
 				</section>
 				<section>
-					<h3>Short history of JavaScript development</h3>
+					<h3>A short history of JavaScript development</h3>
 					<figure class="cap">
-						<img src="short-history.pptx.png" alt="" height="450">
+						<img src="img/short-history.pptx.png" alt="">
 					</figure>
 				</section>
+                <section>
+                    <h3>Vue.js is gaining a lot of popularity lately</h3>
+                    <figure class="cap">
+                        <img src="img/github-stars.png" alt="" height="450">
+                    </figure>
+                </section>
+                <section>
+                    <h3>Vue.js</h3>
+                    <figure class="cap">
+                        <img src="img/vue-easy-to-learn.png" alt="">
+                    </figure>
+                </section>
+                <section>
+                    <h3>Learning curve of AngularJS</h3>
+                    <figure class="cap">
+                        <img src="img/angular-learning-curve.png" alt="" height="450">
+                        <figcaption>https://medium.com/allenhwkim/why-angular-js-so-difficult-57032dd327a4
+                        </figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h3>Vue.js</h3>
+                    <figure class="cap">
+                        <img src="img/vue-lightweight.png" alt="">
+                    </figure>
+                </section>
+                <section>
+                    <h3>Angular and NPM dependency hell</h3>
+                    <figure class="cap">
+                        <img src="img/dependency-hell.png" alt="">
+                    </figure>
+                </section>
+                <section>
+                    <figure class="cap">
+                        <img src="img/heaviest.png" alt="" height="450">
+                        <figcaption>https://www.reddit.com/r/ProgrammerHumor/comments/6s0wov/heaviest_objects_in_the_universe/
+                        </figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h3>Vue.js</h3>
+                    <figure class="cap">
+                        <img src="img/vue-other.png" alt="">
+                    </figure>
+                </section>
+                <section data-background-image="img/live-coding.jpg" data-background-size="contain">
+                </section>
+                <section>
+                    <h3>Tooling of Vue.js</h3>
+                    <ul>
+                        <li>Vue CLI</li>
+                        <li>IntelliJ Plugin</li>
+                        <li>Chrome Plugin</li>
+                        <li>Usage-ready widgets</li>
+                        <li>Router and state management (vuex) provided</li>
+                        <li>Out of the box unit testing (Jest, Mocha)</li>
+                    </ul>
+                </section>
+                <section>
+                    <p>Frontend is a big part of your application.</p>
+                    <p>Do <strong>not</strong> build <strong>monolithic</strong> frontends to have framework flexibility!</p>
+                </section>
+                <section>
+                    <h3>Find us on GitHub</h3>
+                    <figure class="cap">
+                        <img src="img/github.png" alt="">
+                        <figcaption>https://github.com/maciejmalecki/vuejs-techtalkse</figcaption>
+                    </figure>
+                </section>
 			</div>
 		</div>
 
@@ -57,6 +127,7 @@
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
+                history: true,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
